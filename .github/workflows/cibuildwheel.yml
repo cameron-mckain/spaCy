@@ -7,6 +7,7 @@ on:
       # ** matches 'zero or more of any character'
       - 'release-v[0-9]+.[0-9]+.[0-9]+**'
       - 'prerelease-v[0-9]+.[0-9]+.[0-9]+**'
+  workflow_dispatch:
 jobs:
   build_wheels:
     name: Build wheels on ${{ matrix.os }}
